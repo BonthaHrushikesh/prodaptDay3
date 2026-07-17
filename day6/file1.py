@@ -1,0 +1,11 @@
+file = open('Day6/student.txt','r')
+data = file.read()
+print(data)
+file.close()
+
+file = open('Day6/student.txt','a+')
+file.write("This is a new line added to the file.\n")
+file.write("This is another line added to the file.\n")
+file.seek(1)
+file.read()
+file.close()
